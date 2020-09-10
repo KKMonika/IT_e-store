@@ -29,5 +29,9 @@ namespace e_Store.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<e_Store.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<e_Store.Models.Product> Products { get; set; }
     }
 }
