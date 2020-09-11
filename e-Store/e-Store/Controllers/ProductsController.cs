@@ -10,16 +10,18 @@ using e_Store.Models;
 
 namespace e_Store.Controllers
 {
+   // [Authorize(Roles ="administrator")]
     public class ProductsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [AllowAnonymous]
         // GET: Products
         public ActionResult Index()
         {
             return View(db.Products.ToList());
         }
-
+        [AllowAnonymous]
         // GET: Products/Details/5
         public ActionResult Details(int? id)
         {
@@ -34,7 +36,7 @@ namespace e_Store.Controllers
             }
             return View(product);
         }
-
+        [Authorize(Roles = "administrator")]
         // GET: Products/Create
         public ActionResult Create()
         {
@@ -58,6 +60,7 @@ namespace e_Store.Controllers
             return View(product);
         }
 
+        [Authorize(Roles = "administrator")]
         // GET: Products/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -88,7 +91,7 @@ namespace e_Store.Controllers
             }
             return View(product);
         }
-
+        [Authorize(Roles = "administrator")]
         // GET: Products/Delete/5
         public ActionResult Delete(int? id)
         {

@@ -10,16 +10,18 @@ using e_Store.Models;
 
 namespace e_Store.Controllers
 {
+   // [Authorize]
     public class CategoriesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        [AllowAnonymous]
         // GET: Categories
         public ActionResult Index()
         {
             return View(db.Categories.ToList());
         }
-
+        [AllowAnonymous]
         // GET: Categories/Details/5
         public ActionResult Details(int? id)
         {
@@ -34,7 +36,7 @@ namespace e_Store.Controllers
             }
             return View(category);
         }
-
+        [Authorize(Roles ="editor,administrator")]
         // GET: Categories/Create
         public ActionResult Create()
         {
@@ -57,7 +59,7 @@ namespace e_Store.Controllers
 
             return View(category);
         }
-
+        [Authorize(Roles ="editor,administrator")]
         // GET: Categories/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -72,7 +74,7 @@ namespace e_Store.Controllers
             }
             return View(category);
         }
-
+        [Authorize(Roles = "editor,administrator")]
         // POST: Categories/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -88,7 +90,7 @@ namespace e_Store.Controllers
             }
             return View(category);
         }
-
+        [Authorize(Roles = "administrator,editor")]
         // GET: Categories/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -103,7 +105,7 @@ namespace e_Store.Controllers
             }
             return View(category);
         }
-
+        [Authorize(Roles ="administrator,editor")]
         // POST: Categories/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
