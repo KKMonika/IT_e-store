@@ -214,7 +214,6 @@ C:\Users\PC\Downloads\IT_e-store-master\e-Store\e-Store\obj\Debug\e-Store.csproj
 C:\Users\PC\Downloads\IT_e-store-master\e-Store\e-Store\obj\Debug\e-Store.csproj.CopyComplete
 C:\Users\PC\Downloads\IT_e-store-master\e-Store\e-Store\obj\Debug\e-Store.dll
 C:\Users\PC\Downloads\IT_e-store-master\e-Store\e-Store\obj\Debug\e-Store.pdb
-C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.csprojAssemblyReference.cache
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.csproj.CoreCompileInputs.cache
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.dll
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.pdb
@@ -324,3 +323,4 @@ C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-St
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.csproj.CopyComplete
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e_Store.Migrations.initial.resources
 C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.csproj.GenerateResource.cache
+C:\Users\vaska\FINKI\shesti semestar\Internet Tehnologiii\proekt\IT_e-store\e-Store\e-Store\obj\Debug\e-Store.csprojAssemblyReference.cache
